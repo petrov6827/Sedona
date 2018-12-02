@@ -2,6 +2,24 @@
   display: flex;
   justify-content: center; }
 
+.main__background-text {
+  position: absolute; }
+
+.main__welcome {
+  margin: 115px auto;
+  zoom: 1; }
+
 @media (max-width: 767px) {
-  .h1 {
-    font-family: "P TSans"; } }
+  .main {
+    position: relative; }
+  .main__slogan {
+    margin-bottom: 30px; }
+  .main__features {
+    text-align: center; }
+  .main__welcome {
+    margin: 100px auto;
+    overflow: hidden;
+    zoom: 0.5; }
+  .main__triangle {
+    position: absolute;
+    top: 390px; } }

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(main.css);
 @font-face {
   font-family: 'P TSans';
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
@@ -9,6 +8,18 @@
   font-style: normal;
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"), url("../fonts/symbols-sedona.woff2") format("woff2"); }
+
+p {
+  font-family: 'P TSans';
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px; }
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px; }
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
@@ -114,6 +125,9 @@
   right: 30px;
   top: 30px; }
 
+.menu {
+  display: none; }
+
 .menu--show {
   display: block; }
 
@@ -126,6 +140,8 @@
     display: none; } }
 
 @media (min-width: 768px) {
+  .menu {
+    display: block; }
   .main-nav__close,
   .main-nav__toggle {
     display: none; }
@@ -149,4 +165,30 @@
     height: 56px;
     top: 0;
     left: 50%;
-    margin-left: -51px; } }
+    margin-left: -91px; } }
+
+.main__background {
+  display: flex;
+  justify-content: center; }
+
+.main__background-text {
+  position: absolute; }
+
+.main__welcome {
+  margin: 115px auto;
+  zoom: 1; }
+
+@media (max-width: 767px) {
+  .main {
+    position: relative; }
+  .main__slogan {
+    margin-bottom: 30px; }
+  .main__features {
+    text-align: center; }
+  .main__welcome {
+    margin: 100px auto;
+    overflow: hidden;
+    zoom: 0.5; }
+  .main__triangle {
+    position: absolute;
+    top: 390px; } }

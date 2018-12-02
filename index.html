@@ -20,7 +20,12 @@
             </div>
             <div class="top-menu">
                 <a href="index.html" class="logo">                
-                    <img src="img/logo.png">                                          
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                        <img src="img/logo-sedona-mobile.svg" alt="logo">
+                    </picture>                                          
                 </a>
                 <a href="#" class="main-nav__toggle">&#9776</a>
             </div>      
@@ -28,12 +33,34 @@
         <main>
             <div class="main__background">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="img/back-desktop.png">
-                    <img src="img/back.png">
+                    <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+                    <img srcset="img/bg-back-mobile@1x.jpg 1x, bg-back-mobile@2x.jpg 2x">
                 </picture>
+                <div class="main__background-text">
+                    <img class="main__welcome" src="img/text-sedona-index.svg">
+                </div>
+
+                <div class="main__triangle">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/bg-intro-triangle-mobile.svg">
+                        <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+                        <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+                        <img src="img/bg-intro-triangle-mobile.svg">
+                    </picture>  
+                </div>
+                
             </div>
-            <h1>Welcome</h1>
-        </main>      
+
+
+
+            <p class="main__slogan  title">Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</p>
+            <p class="main__features">Рассмотрим 5 причин, по которым седона круче чем гранд каньон</p>
+        </main>
+
+        <section class="advantage__1">
+            
+        </section>      
 
         <script type="text/javascript" src="js/script.js"></script>        
     </body>

@@ -1,5 +1,5 @@
 var Toggle = document.querySelector('.main-nav__toggle');
-var Close = document.querySelector('main-nav__close');
+var Close = document.querySelector('.main-nav__close');
 var Menu = document.querySelector('.menu');
 
 Toggle.addEventListener('click',function(event) {
@@ -11,3 +11,19 @@ Close.addEventListener('click',function(event) {
     event.preventDefault();
     Menu.classList.remove('menu--show');
 });
+
+
+
+function sayHiLater() {
+  
+  var greeting = 'Hi!';
+
+  setTimeout(function() {
+
+        console.log(greeting);
+
+  }, 1000);
+
+}
+
+sayHiLater();

@@ -42,6 +42,9 @@
   right: 30px;
   top: 30px; }
 
+.menu {
+  display: none; }
+
 .menu--show {
   display: block; }
 
@@ -54,6 +57,8 @@
     display: none; } }
 
 @media (min-width: 768px) {
+  .menu {
+    display: block; }
   .main-nav__close,
   .main-nav__toggle {
     display: none; }
@@ -77,4 +82,4 @@
     height: 56px;
     top: 0;
     left: 50%;
-    margin-left: -51px; } }
+    margin-left: -91px; } }

@@ -4,6 +4,7 @@
        url('../fonts/ptsans.woff') format('woff');
 };
 
+
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -12,6 +13,21 @@
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
+
+p {
+  font-family: 'P TSans';
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px;
+}
+
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
@@ -45,4 +61,4 @@
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
 @import "header.scss";
-@import "main.css";
+@import "main.scss";
