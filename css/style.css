@@ -165,7 +165,7 @@ p {
     height: 56px;
     top: 0;
     left: 50%;
-    margin-left: -91px; } }
+    margin-left: -50px; } }
 
 .main__background {
   display: flex;
@@ -178,11 +178,14 @@ p {
   margin: 115px auto;
   zoom: 1; }
 
+.main__triangle {
+  position: absolute; }
+
 @media (max-width: 767px) {
   .main {
     position: relative; }
   .main__slogan {
-    margin-bottom: 30px; }
+    margin: 30px 10px; }
   .main__features {
     text-align: center; }
   .main__welcome {
@@ -190,5 +193,19 @@ p {
     overflow: hidden;
     zoom: 0.5; }
   .main__triangle {
-    position: absolute;
-    top: 390px; } }
+    top: 427px;
+    position: absolute; } }
+
+@media (min-width: 768px) {
+  .main__triangle {
+    top: 530px; }
+  .main__about {
+    margin: 50px 0; }
+  .main__slogan,
+  .main__features {
+    width: 500px;
+    text-align: center;
+    margin: 35px auto; }
+  .main__slogan {
+    font-size: 21px;
+    line-height: 26px; } }
