@@ -31,23 +31,39 @@
     border-bottom: 1px solid #d6d6d6;
 }
 
+.else__title,
+.else__about {
+    text-align: left;
+}
+
 @media (max-width: 767px) {
-    item__1-triangle {
+    .item__1-triangle {
         position: absolute;
         top: 0;
     }
 
-    .feature__item {
-        display: flex;
+    .else__title,
+    .else__about {
+        display: inline-block;
+   }
+
+   .else__feature {
+        margin-left: 25px;
+        margin-top: 25px;
+   }
+
+    .else__feature img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
     }
 
-    feature__item2 {
-       flex-direction: row-reverse;
+    .else__title {
+        margin-left: 10px;
     }
 
-    item__1,
-    item__2 {
-        width: 33%;
+    .else__about {
+        margin-left: 50px
     }
 }
 
@@ -55,6 +71,19 @@
     .title {
         font-size: 21px;        
         line-height: 26px;
+    }
+
+    .feature__item {
+        display: flex;
+    }
+
+    .feature__item2 {
+       flex-direction: row-reverse;
+    }
+
+    .item__1,
+    .item__2 {
+        width: 33%;
     }
 }
 
