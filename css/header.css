@@ -20,6 +20,9 @@
   color: #fff;
   text-transform: uppercase; }
 
+.main-nav__item--active {
+  color: #766357; }
+
 .logo {
   display: inherit;
   width: auto;

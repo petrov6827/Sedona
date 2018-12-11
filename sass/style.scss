@@ -30,6 +30,7 @@ p {
 }
 
 
+
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
@@ -65,4 +66,6 @@ p {
 @import "main.scss";
 @import "features.scss";
 @import "offer.scss";
-@import "footer.scss"
+@import "footer.scss";
+@import "hotel.scss"
+

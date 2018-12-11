@@ -1,0 +1,126 @@
+// .choose__hotel {
+//     color: #fff;
+// }
+
+.choose__hotel {
+    position: relative;
+    background: url('../img/bg-back-desktop@1x.jpg');
+    filter: blur(5px);
+    filter: url('..svg/blur.svg#blur');
+}
+    
+.hotel__background img {
+    filter: blur(5px);
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+}
+
+label {
+    font-family: 'P TSans';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hotel__necessary,
+.hotel__type,
+.hotel__price {
+    width: 33%;
+}
+
+.choose__hotel p {
+    font-size: 16px;
+    font-family: 'P TSans';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+
+
+@media (max-width: 767px) {
+    .hotel__background img {
+        height: 500px;
+    }
+    
+    input {
+        width: 20px;
+        height: 20px;
+        border: solid 4px #fff;
+        border-radius: 2px;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        top: 4px;
+    }
+
+    .hotel__background img {
+        height: 500px;
+        width: 100%;
+    }
+
+    .hotel__necessary,
+    .hotel__type,
+    .hotel__price {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .choose__hotel p{
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) {    
+
+    .choose__hotel {
+        display: flex;
+        height: 217px;
+        padding: 0 45px;
+    }
+        
+    .choose__hotel p{
+        font-size: 16px;
+        font-family: 'P TSans';
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        text-align: left;
+    }
+
+    input,
+    label {
+        font-size: 14px;
+        font-family: 'P TSans';
+        text-transform: uppercase;
+    }
+
+    input {
+        width: 20px;
+        height: 20px;
+        border: solid 4px #fff;
+        border-radius: 2px;
+        transition: 0.2s all linear;
+        outline: none;
+        margin-right: 20px;
+        margin-bottom: 22px;
+        position: relative;
+        top: 4px;
+    }
+
+
+
+    .hotel__background img {
+        height: 217px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
