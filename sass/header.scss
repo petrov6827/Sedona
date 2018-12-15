@@ -72,6 +72,7 @@
 }
 
 @media (min-width: 768px) {
+
     .menu {
         display: block;
     }
@@ -88,8 +89,9 @@
 
     .main-nav__item {
         background-color: #fff;
-        width: 150px;
         border: none;
+        padding: 10px 0;
+        width: 20%;
     }
 
     .main-nav__item a {
@@ -117,6 +119,11 @@
 }
 
 @media (min-width: 1200px) {
+
+    .header {
+        margin: 0 95px;
+    }
+
     .top-menu {
         margin-left: -93px;
     }
