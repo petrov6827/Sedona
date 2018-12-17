@@ -48,9 +48,25 @@
 
 .main-nav__close {
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 10px;
+    top: 7px;
+    width: 28px;
+    height: 28px;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
 }
+
+.main-nav__close:after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+    border-left: 3px solid #fff;
+    transform: rotate(0deg);
+}
+
 
 .menu {
     display: none;

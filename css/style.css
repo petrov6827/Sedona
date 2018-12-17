@@ -91,7 +91,7 @@ p {
   body {
     width: 768px;
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); } }
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); } }
 
 @media (min-width: 1200px) {
   body {
@@ -142,8 +142,22 @@ p {
 
 .main-nav__close {
   position: absolute;
-  right: 30px;
-  top: 30px; }
+  right: 10px;
+  top: 7px;
+  width: 28px;
+  height: 28px;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg); }
+
+.main-nav__close:after {
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 15px;
+  width: 28px;
+  height: 28px;
+  border-left: 3px solid #fff;
+  transform: rotate(0deg); }
 
 .menu {
   display: none; }
@@ -218,14 +232,18 @@ p {
   .main__welcome {
     margin: 100px auto;
     overflow: hidden;
-    zoom: 0.5; }
+    zoom: 0.7; }
   .main__triangle {
-    top: 427px;
-    position: absolute; } }
+    top: 344px;
+    position: absolute;
+    zoom: 1.2; }
+  .main__triangle--close {
+    display: none; } }
 
 @media (min-width: 768px) {
   .main__triangle {
-    top: 530px; }
+    top: 521px;
+    zoom: 1; }
   .main__about {
     margin: 50px 0; }
   .main__slogan,
@@ -764,3 +782,172 @@ input:checked + label:after {
   .star,
   .hotel__raiting {
     right: 72px; } }
+
+.main__background-photo {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: -1; }
+  .main__background-photo picture {
+    margin-top: -215px; }
+
+.main__background-sedona {
+  position: absolute; }
+
+.main__triangle-photo {
+  position: absolute; }
+
+.photo__title,
+.photo__like {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "P TSans"; }
+
+.photo__author {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: normal;
+  margin: 0;
+  font-family: "P TSans"; }
+
+.like__svg {
+  float: left;
+  margin-right: 15px; }
+
+@media (max-width: 767px) {
+  .main__background-photo {
+    position: relative;
+    height: 160px;
+    z-index: -1; }
+  .main__background-sedona {
+    zoom: 0.8; }
+  .main__triangle-photo {
+    bottom: -4px;
+    zoom: 1.3; }
+  .main__features-photo {
+    line-height: 26px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5; }
+  .photo {
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5; }
+  .gallery {
+    text-align: center;
+    overflow: hidden; }
+  .photo__info {
+    padding-top: 10px; } }
+
+@media (min-width: 768px) {
+  .main__background-photo {
+    height: 300px; }
+  .main__triangle-photo {
+    bottom: -6px; }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    overflow: hidden; }
+  .photo__info {
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative; }
+  .photo__like {
+    position: absolute;
+    top: 30px;
+    right: 20px; }
+  .photo {
+    width: 100%; }
+  .photo__else {
+    margin: 0;
+    width: 49%;
+    display: inline-block; }
+  .photo__group {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .photo {
+    margin: 0;
+    position: relative; }
+  .photo__info {
+    position: absolute;
+    padding: 20px;
+    z-index: 1;
+    bottom: 4px;
+    width: 97%;
+    background: inherit;
+    color: #fff;
+    box-shadow: inset 0 0 0 220px rgba(0, 0, 0, 0.5); }
+  .photo__else {
+    margin: 0;
+    width: 33%; }
+  .photo__group {
+    justify-content: center; } }
+
+.video__about {
+  margin: 40px 10px; }
+
+@media (max-width: 767px) {
+  .video__slogan {
+    margin: 30px 10px; }
+  .video__features {
+    text-align: center;
+    line-height: 26px;
+    padding-bottom: 30px; }
+  .video__img {
+    display: flex;
+    justify-content: center; }
+  .video__controls {
+    background: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; }
+  button {
+    border: none; } }
+
+@media (min-width: 768px) {
+  .video {
+    position: relative;
+    margin-bottom: 45px; }
+  .video__slogan,
+  .video__features {
+    width: 500px;
+    text-align: center;
+    margin: 35px auto; }
+  .video__slogan {
+    font-size: 21px;
+    line-height: 26px; }
+  .video__img {
+    display: flex;
+    justify-content: center; }
+  .video__controls {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    box-shadow: inset 0 0 0 220px rgba(0, 0, 0, 0.3);
+    width: 648px;
+    left: 50%;
+    margin-left: -324px;
+    padding: 35px 0; }
+  button {
+    border: none;
+    background: inherit; }
+    button img {
+      color: #fff; } }
+
+@media (min-width: 1200px) {
+  .video__controls {
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0; }
+  .video {
+    margin-bottom: 80px; } }

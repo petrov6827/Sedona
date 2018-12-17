@@ -22,14 +22,18 @@
   .main__welcome {
     margin: 100px auto;
     overflow: hidden;
-    zoom: 0.5; }
+    zoom: 0.7; }
   .main__triangle {
-    top: 427px;
-    position: absolute; } }
+    top: 344px;
+    position: absolute;
+    zoom: 1.2; }
+  .main__triangle--close {
+    display: none; } }
 
 @media (min-width: 768px) {
   .main__triangle {
-    top: 530px; }
+    top: 521px;
+    zoom: 1; }
   .main__about {
     margin: 50px 0; }
   .main__slogan,
