@@ -4,7 +4,7 @@
     padding: 10px;    
 }
 
-label {
+.choose__hotel label {
     font-family: 'P TSans';
     text-transform: uppercase;
     font-size: 14px;
@@ -37,12 +37,11 @@ label {
 }
 
 input,
-label {
+.choose__hotel label {
     font-size: 14px;
     font-family: 'P TSans';
     text-transform: uppercase;
     position: relative;
-    width: 80%;
     display: inline-block;
 }
 
@@ -62,7 +61,7 @@ input[type='text'] {
     outline: none;
 }
 
-label:before {
+.choose__hotel label:before {
     content: "";
     display: inline-flex;
     width: 20px;
@@ -77,11 +76,11 @@ label:before {
     top: 4px;
 }
 
-.hotel__price label:before {
+.hotel__price .choose__hotel label:before {
     display: none;
 }
 
-input:checked + label:after {
+input:checked + .choose__hotel label:after {
     content: "";
     position: absolute;
     width: 10px;
@@ -168,8 +167,8 @@ input:checked + label:after {
     .choose__hotel p {
         margin-bottom: 10px;
     }
-
-    label:before {
+    
+    .choose__hotel label:before {
         margin-bottom: 10px;
     }
 }
