@@ -83,23 +83,138 @@ legend.title {
 .phone-icon,
 .mail-icon {
   background: #e6e6e6;
-  position: absolute;
   border: 16px solid #e6e6e6;
   width: 30px;
   height: 30px;
-  top: 0;
-  right: 0; }
+  text-align: center; }
+  .phone-icon img,
+  .mail-icon img {
+    margin-top: 5px; }
+
+.impression__block,
+.places__block {
+  position: relative; }
+
+.impression input[type="radio"] {
+  display: none; }
+
+.impression label,
+.places label {
+  display: inline-flex;
+  font-size: 18px;
+  font-family: "P Tsans";
+  font-weight: bold;
+  background: inherit;
+  color: #000;
+  padding: 0;
+  padding-left: 20px;
+  line-height: 55px;
+  text-transform: none; }
+
+.places label {
+  padding-left: 0; }
+
+.impression label:before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  border-radius: 55px;
+  background: #f1f1f1;
+  outline: none;
+  margin-bottom: 12px;
+  top: -10px;
+  margin-right: 20px; }
+
+input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 15px;
+  background-color: #333333;
+  top: 17px;
+  left: 37px; }
+
+.places label:before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  outline: none;
+  margin-bottom: 12px;
+  top: -10px;
+  margin-right: 20px; }
+
+.places input[type="checkbox"] {
+  display: none; }
+
+.places input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  border-radius: 15px;
+  width: 10px;
+  height: 19px;
+  left: 9px;
+  border-radius: 3px;
+  border-bottom: 5px solid #000;
+  border-right: 5px solid #000;
+  top: 15px;
+  left: 20px;
+  padding-left: 0; }
+
+.emotions__text {
+  border: none;
+  padding: 20px;
+  background: #f1f1f1;
+  display: block;
+  font-size: 18px;
+  font-family: "P Tsans";
+  font-weight: bold;
+  color: #000;
+  text-transform: none;
+  box-sizing: border-box;
+  line-height: 26px;
+  width: 100%;
+  margin-bottom: 50px; }
+
+.review__send {
+  background-color: #81b3d1;
+  width: 100%;
+  margin: 0px auto 50px auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px;
+  font-family: "P Tsans";
+  margin-bottom: 40px; }
+  .review__send:hover {
+    background-color: #669dc0; }
+  .review__send:active {
+    background-color: #5495bd; }
 
 @media (max-width: 767px) {
   main,
   fieldset {
     border-bottom: 1px solid #e5e5e5; }
+  .emotions {
+    border-bottom: none; }
+  fieldset {
+    margin-top: 25px; }
   .review__author,
-  .contacts {
+  .contacts,
+  .ipression,
+  .places,
+  .emotions {
     padding: 0 20px; }
   .contacts__block {
     display: flex;
-    position: relative; } }
+    position: relative; }
+  .need__towrite {
+    display: NONE; } }
 
 @media (min-width: 768px) {
   .review__form {

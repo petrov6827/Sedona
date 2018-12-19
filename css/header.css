@@ -29,7 +29,8 @@
   margin: 0 auto;
   position: relative;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  top: 5px; }
 
 .main-nav__toggle {
   position: absolute;

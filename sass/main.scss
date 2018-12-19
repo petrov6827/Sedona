@@ -5,6 +5,7 @@
 
 .main__background-text {
     position: absolute;
+    top: 21px;
 }
 
 .main__welcome {
@@ -71,5 +72,9 @@
 }
 
 @media (min-width: 1200px) {
+
+    .main__background {
+        margin-bottom: 45px;
+    }
     
 }

@@ -48,7 +48,8 @@
   .main__features-photo {
     line-height: 26px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #e5e5e5; }
+    padding-right: 10px;
+    padding-left: 10px; }
   .photo {
     padding: 20px;
     border-bottom: 1px solid #e5e5e5; }
