@@ -1,15 +1,16 @@
 .main__background {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: -1;
 }
 
 .main__background-text {
     position: absolute;
-    top: 21px;
 }
 
 .main__welcome {
-    margin: 115px auto;
+    margin: 0 auto;
     zoom: 1;
 } 
 
@@ -32,13 +33,13 @@
     }    
 
     .main__welcome {
-        margin: 100px auto;
+        margin: 0 auto;
         overflow: hidden;
         zoom: 0.7;
     }
 
     .main__triangle {
-        top: 344px;
+        top: 300px;
         position: absolute;
         zoom: 1.2;
     }
@@ -46,11 +47,15 @@
     .main__triangle--close {
         display: none;
     }
+
+    .main__background-text {
+        top: 70px;
+    }
 }
 
 @media (min-width: 768px) {
    .main__triangle {
-        top: 521px;
+        top: 463px;
         zoom: 1;
     }
 
@@ -68,6 +73,10 @@
     .main__slogan {
         font-size: 21px;        
         line-height: 26px;
+    }
+
+    .main__background-text {
+        top: 75px;
     }
 }
 

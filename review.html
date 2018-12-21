@@ -50,7 +50,7 @@
                 <div class=""></div>
             </div>
             <div class="main__about  main__about-review">
-                <p class="main__slogan  title">Оставьте свой отзыв</p>
+                <p class="main__slogan  title  main__slogan-review">Оставьте свой отзыв</p>
                 <p class="main__features  main__features-review">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях </p>
             </div>
         </main>
@@ -73,14 +73,15 @@
             </fieldset>
 
             <fieldset class="contacts">
-                <legend class="title  title__desktop">Контактная информация:</legend>
-                    <label for="phone">Контактный телефон*:</label>
-                    <div class="contacts__block">
+                <legend class="title  title__desktop">Контактная информация:</legend>                    
+                    <div class="contacts__block  contacts__block-phone">
+                        <label for="phone">Контактный телефон*:</label>
                         <input type="tel" id="phone" name="phone" placeholder="Введите телефон">
                         <div class="phone-icon"><img src="img/icon-phone.svg" width="18" height="18"></div>
                     </div>
-                    <label for="email">Электронная почта*:</label>
-                    <div class="contacts__block">
+                    
+                    <div class="contacts__block  contacts__block-email">
+                        <label for="email">Электронная почта*:</label>
                         <input type="email" id="email" name="email" pattern=".+@globex.com" placeholder="Введите e-mail">
                         <div class="mail-icon"><img src="img/icon-mail.svg" width="18" height="18" alt=""></div>
                     </div>

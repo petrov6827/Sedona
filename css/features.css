@@ -67,6 +67,9 @@
   .title {
     font-size: 21px;
     line-height: 26px; }
+  .feature__title {
+    width: 160px;
+    margin: 10px auto; }
   .feature__item {
     display: flex;
     justify-content: center;

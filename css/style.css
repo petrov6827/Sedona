@@ -211,14 +211,15 @@ p {
 
 .main__background {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  z-index: -1; }
 
 .main__background-text {
-  position: absolute;
-  top: 21px; }
+  position: absolute; }
 
 .main__welcome {
-  margin: 115px auto;
+  margin: 0 auto;
   zoom: 1; }
 
 .main__triangle {
@@ -232,19 +233,21 @@ p {
   .main__features {
     text-align: center; }
   .main__welcome {
-    margin: 100px auto;
+    margin: 0 auto;
     overflow: hidden;
     zoom: 0.7; }
   .main__triangle {
-    top: 344px;
+    top: 300px;
     position: absolute;
     zoom: 1.2; }
   .main__triangle--close {
-    display: none; } }
+    display: none; }
+  .main__background-text {
+    top: 70px; } }
 
 @media (min-width: 768px) {
   .main__triangle {
-    top: 521px;
+    top: 463px;
     zoom: 1; }
   .main__about {
     margin: 50px 0; }
@@ -255,7 +258,9 @@ p {
     margin: 35px auto; }
   .main__slogan {
     font-size: 21px;
-    line-height: 26px; } }
+    line-height: 26px; }
+  .main__background-text {
+    top: 75px; } }
 
 @media (min-width: 1200px) {
   .main__background {
@@ -330,6 +335,9 @@ p {
   .title {
     font-size: 21px;
     line-height: 26px; }
+  .feature__title {
+    width: 160px;
+    margin: 10px auto; }
   .feature__item {
     display: flex;
     justify-content: center;
@@ -842,9 +850,10 @@ input[type="checkbox"]:checked + label:after {
     height: 160px;
     z-index: -1; }
   .main__background-sedona {
-    zoom: 0.8; }
+    zoom: 0.8;
+    top: 70px; }
   .main__triangle-photo {
-    bottom: -4px;
+    bottom: -5px;
     zoom: 1.3; }
   .main__features-photo {
     line-height: 26px;
@@ -863,6 +872,8 @@ input[type="checkbox"]:checked + label:after {
 @media (min-width: 768px) {
   .main__background-photo {
     height: 300px; }
+  .main__background-sedona {
+    top: 100px; }
   .main__triangle-photo {
     bottom: -6px; }
   .gallery {
@@ -992,8 +1003,7 @@ main {
   margin-bottom: 20px;
   color: #000; }
 
-.author__block,
-.contacts__block {
+.author__block {
   display: flex; }
 
 .author__block label {
@@ -1052,13 +1062,19 @@ legend.title {
 .contacts input {
   width: 100%; }
 
+.contacts__block {
+  position: relative; }
+
 .phone-icon,
 .mail-icon {
   background: #e6e6e6;
   border: 16px solid #e6e6e6;
-  width: 37px;
+  width: 31px;
   height: 31px;
-  text-align: center; }
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 20px; }
   .phone-icon img,
   .mail-icon img {
     margin-top: 7px; }
@@ -1182,12 +1198,15 @@ input[type="radio"]:checked + label:after {
   .emotions {
     padding: 0 20px; }
   .contacts__block {
-    display: flex;
     position: relative; }
+  .contacts__block input {
+    box-sizing: border-box; }
   .need__towrite {
     display: NONE; } }
 
 @media (min-width: 768px) {
+  .main__slogan-review {
+    font-size: 30px; }
   .review__form {
     margin: 0 60px;
     position: relative; }
@@ -1195,9 +1214,7 @@ input[type="radio"]:checked + label:after {
     font-size: 21px; }
   .review__form label {
     line-height: 24px; }
-  .title {
-    margin-bottom: 60px; }
-  .places .title {
+  .places > .title {
     margin-bottom: 60px; }
   .main__about {
     margin: 0; }
@@ -1210,10 +1227,14 @@ input[type="radio"]:checked + label:after {
   .review__author {
     margin-left: 50%;
     margin-bottom: 10px;
-    border-left: 1px solid black; }
+    border-left: 1px solid #dbdbdb;
+    padding-left: 40px; }
   .review__author title,
   .impression title {
     text-align: left; }
+  .review__author title {
+    text-align: left;
+    padding-left: 20px; }
   #otchestvo {
     margin-bottom: 0; }
   .impression label {
@@ -1232,7 +1253,7 @@ input[type="radio"]:checked + label:after {
     box-sizing: border-box;
     width: 100%;
     height: 1px;
-    background: #bfbfbf;
+    background: #dbdbdb;
     border-width: 0 10px; }
   .title__desktop:before {
     margin-left: -100%;
@@ -1249,14 +1270,14 @@ input[type="radio"]:checked + label:after {
     margin-bottom: 50px; }
   .review__author {
     margin-bottom: 70px; }
-  .emotions .title {
+  .emotions + .title {
     margin-bottom: 40px; }
   .places label {
     line-height: 55px; }
   .places__block {
     width: 200px;
     display: inline-block;
-    margin-left: 30px; }
+    margin-left: 80px; }
   .review__send {
     width: 50%;
     margin-bottom: 0; }
@@ -1269,4 +1290,24 @@ input[type="radio"]:checked + label:after {
 
 @media (min-width: 1200px) {
   .review__form {
-    margin: 0 120px; } }
+    margin: 0 120px; }
+  .contacts__block {
+    display: flex; }
+  .contacts__block-phone {
+    width: 40%;
+    float: left; }
+  .contacts__block-email {
+    float: right;
+    width: 50%; }
+  .contacts label {
+    padding: 10px; }
+  .places__block {
+    margin-left: 30px; }
+  .impression title {
+    margin-left: 160px; }
+  .review__author title {
+    text-align: left;
+    margin-left: 20px; }
+  .main__slogan-review {
+    margin-top: 110px;
+    margin-bottom: 30px; } }
