@@ -19,12 +19,13 @@
 
     .video__slogan {
         margin: 30px 10px;
+
     }
 
     .video__features {
         text-align: center;
-        line-height: 26px;
-        padding-bottom: 30px;
+        line-height: 22px;
+        width: 275px;
     }
 
     .video__img {
@@ -59,7 +60,7 @@
     }
 
     .video__slogan {
-        font-size: 21px;        
+        font-size: 30px;        
         line-height: 26px;
     }
 
@@ -100,6 +101,10 @@
     }
 
     .video {
-        margin-bottom: 80px;
+        margin-bottom: 105px;
+    }
+
+    .video__about {
+        margin-bottom: 65px;
     }
 }

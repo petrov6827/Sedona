@@ -60,14 +60,13 @@
     }
 
     .main__features-photo {
-        line-height: 26px;
-        padding-bottom: 30px;
+        line-height: 24px;
+        padding-bottom: 10px;
         padding-right: 10px;
         padding-left: 10px;
     }
 
     .photo {
-        padding: 20px;
         border-bottom: 1px solid #e5e5e5;
     }
 
@@ -77,7 +76,16 @@
     }
 
     .photo__info {
-        padding-top: 10px;
+        padding: 10px 12px;
+    }
+
+    .main__slogan {
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .photo__else {
+        padding: 30px 0;
     }
 }
 
@@ -87,7 +95,7 @@
     }
 
     .main__background-sedona {
-        top: 100px;
+        top: 95px;
     }
 
     .main__triangle-photo {
@@ -99,12 +107,26 @@
         flex-direction: column;
         margin: 60px;
         overflow: hidden;
+        margin-top: 65px;
     }
 
     .photo__info {
         background-color: #f1f1f1;
         padding: 20px;
         position: relative;
+    }
+
+    .photo__info-headphoto {
+        padding-bottom: 5px;
+    }
+
+    .photo__title-head {
+        display: inline-block;
+        width: 600px;
+    }
+
+    .photo__author-head {
+        display: inline-block;
     }
 
     .photo__like {
@@ -127,12 +149,32 @@
         display: block;
     }
 
+    .main__slogan-photo {
+        font-size: 30px;
+        line-height: 26px;
+        margin-top: 65px;
+    }
+
+    span.likebtn-wrapper.lb-loaded.lb-style-custom.lb-popup-position-top.lb-popup-style-light {
+        float: right;
+    }
+
 }
 
 @media (min-width: 1200px) {
+
+    .main__background-sedona {
+        top: 100px;
+    }
+
+    .main__slogan-photo {
+        margin-top: 115px;
+    }
+
     .photo {
         margin: 0;
         position: relative;
+        margin-bottom: -4px;
     }
 
     
@@ -155,5 +197,15 @@
     .photo__group {
         justify-content: center;
     }
+     
+    .gallery {
+        margin: 0;
+        margin-bottom: 70px;
+    }
 
+
+    .photo__title-head {
+        width: none;
+        display: block;
+    }
 }

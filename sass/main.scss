@@ -60,7 +60,7 @@
     }
 
     .main__about {
-        margin: 50px 0;
+        margin-top: 46px;
     }
 
     .main__slogan,
@@ -69,6 +69,13 @@
         text-align: center;
         margin: 35px auto;
     }
+
+
+    .main__features {
+        margin-top: -7px;
+        margin-bottom: 50px;
+    }
+
 
     .main__slogan {
         font-size: 21px;        
@@ -81,6 +88,11 @@
 }
 
 @media (min-width: 1200px) {
+
+    .main__features {
+        margin-top: 27px;
+        margin-bottom: 49px;
+    }
 
     .main__background {
         margin-bottom: 45px;

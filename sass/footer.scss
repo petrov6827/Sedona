@@ -1,11 +1,10 @@
 .social a {
     background-color: #81b3d1;
-    padding: 24px;
+    padding: 13px;
     font-size: 24px;
     color: #fff;
     font-family: "symbols-sedona";
     text-decoration: none;
-    margin-left: 6px;
     max-width: 46px;
     max-height: 48px;
     &:hover {
@@ -18,7 +17,6 @@
 
 .social {
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .tag {
@@ -28,8 +26,8 @@
     font-size: 21px;
     font-weight: bold;
     font-family: "P Tsans";
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
+    margin-top: 66px;
 }
 
 .hashtag {
@@ -71,8 +69,6 @@
         font-size: 21px;
         font-weight: bold;
         font-family: "P Tsans";
-        margin-top: 50px;
-        margin-bottom: 50px;
     }
 
     .icons {
@@ -84,8 +80,41 @@
         padding-left: 28px;
         padding-right: 28px;
     }
+    .icons {
+        margin-top: 10px;
+    }
+
+    .social {
+        margin-bottom: 30px;
+    }
+
+    .social a {
+        padding: 13px;
+        margin-left: 0;
+    }
+    
+    .tag {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 1200px) {
+
+    .icons {
+        margin-top: 10px;
+    }
     
+    .social {
+        margin-bottom: 30px;
+    }
+    
+    .social a {
+        padding: 13px;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .tag {
+        margin-top: 20px;
+    }
 }

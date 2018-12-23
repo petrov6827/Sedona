@@ -7,8 +7,8 @@
     margin: 30px 10px; }
   .video__features {
     text-align: center;
-    line-height: 26px;
-    padding-bottom: 30px; }
+    line-height: 22px;
+    width: 275px; }
   .video__img {
     display: flex;
     justify-content: center; }
@@ -30,7 +30,7 @@
     text-align: center;
     margin: 35px auto; }
   .video__slogan {
-    font-size: 21px;
+    font-size: 30px;
     line-height: 26px; }
   .video__img {
     display: flex;
@@ -61,4 +61,6 @@
     justify-content: space-around;
     padding: 35px 0; }
   .video {
-    margin-bottom: 80px; } }
+    margin-bottom: 105px; }
+  .video__about {
+    margin-bottom: 65px; } }

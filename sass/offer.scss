@@ -38,22 +38,38 @@
 
 @media (min-width: 768px) {
     .find__hotel {
-        width: 460px;
+        width: 430px;
     }
 
     .offer__title {
         font-size: 30px;
         margin-top: 60px;
+        margin-bottom: 25px;
     }
 
     .offer__about {
         display: flex;
         max-width: 460px;
-        margin: 35px auto 45px auto;
         text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
 }
 
 @media (min-width: 1200px) {
 
+    .offer__title {
+        margin-top: 55px;
+    }
+
+    .offer__about {
+        width: 460px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+
+    .find__hotel {
+        width: 430px;
+        margin-bottom: 65px;
+    }
 }

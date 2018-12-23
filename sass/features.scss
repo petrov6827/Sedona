@@ -103,6 +103,7 @@
     .feature__title {
         width: 160px;
         margin: 10px auto;
+
     }
 
     .feature__item {
@@ -121,7 +122,7 @@
 
     .item__1,
     .item__2 {
-        width: 33%;
+        width: 32%;
     }
 
     .else__image {
@@ -137,7 +138,6 @@
     }
 
     .else__features {
-        margin-bottom: 60px;
     }
 
     .else__feature,
@@ -145,10 +145,38 @@
     .item__4,
     .item__5 {
         width: 170px;
+        
     }
+
+
+    .about {
+        width: 165px;
+        margin: 0 auto;
+        line-height: 22px;
+    }
+
+    .number {
+        line-height: 10px;
+        margin-bottom: 25px;
+    }
+    
+    .else__title {
+        margin-top: 30px;
+        margin-bottom: 22px;
+    }
+    
 }
 
 @media (min-width: 1200px) {
+    
+    .about {
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .offer__about {
+        width: 460px;
+    }
 
     .feature__item {
         max-height: 256px;
@@ -164,6 +192,19 @@
     .item__4,
     .item__5 {
         width: 285px;
+        padding-bottom: 40px;
+    }
+    
+    .number {
+        margin: 12px 0;
+    }
+
+    .item345 {
+        height: 250px;
+    }
+
+    .else__features {
+        margin-bottom: 78px;
     }
 
 }
